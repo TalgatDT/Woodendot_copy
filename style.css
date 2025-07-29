@@ -1,29 +1,26 @@
-/* color */
-
-/* all */
 html {
-  scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 	margin-left: auto;         /* Автоматический отступ слева */
 	margin-right: auto;        /* Автоматический отступ справа */
-  max-width: 1440px;
-  width: 100%;
-  background: rgb(247, 247,247);
+	max-width: 1440px;
+	width: 100%;
+	background: rgb(247, 247,247);
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+	color: inherit;
+	text-decoration: none;
 }
 
 p {
@@ -37,14 +34,13 @@ ul {
 }
 
 li {
-  list-style: none;
+	list-style: none;
 }
 
 img {
-  max-width: 100%;
+	max-width: 100%;
 }
 
-/* header */
 .header {
 	height: 69px;
 	border-bottom: 1px solid rgb(200,200,200);
@@ -94,9 +90,7 @@ img {
 	margin-left: auto;
 	margin-right: 41%;
 }
-/* /header */
 
-/* head */
 .head {
 	height: 698px;
 	background-color: rgb(200,200,200);
@@ -126,14 +120,12 @@ img {
 	cursor: pointer;
 	width: 204px;
 	height: 33px;
-
 	font-family: 'Cardo', sans-serif;
 	font-size: 20px;
 	font-weight: 700;
 	line-height: 20px;
 	text-align: center;
 	color: rgb(255, 255, 255);
-
 	background-color: inherit;
 	border: 1px solid rgb(255, 255, 255);
 
@@ -147,9 +139,7 @@ img {
 		border: 1px solid rgb(128, 128, 128);
 	}
 }
-/* /head */
 
-/* info */
 .info {
 	height: 155px;
 }
@@ -188,9 +178,7 @@ img {
 	text-align: left;
 	color: rgb(0, 0, 0);
 }
-/* /info */
 
-/* gallery */
 .gallery {
 	margin-bottom: 115px;
 	height: 320px;
@@ -204,9 +192,7 @@ img {
 	width: 360px;
 	height: 320px;
 }
-/* /gallery */
 
-/* cloe */
 .cloe,
 .pelican,
 .alada,
@@ -235,6 +221,7 @@ img {
 }
 
 .title-section {
+	margin-bottom: 4px;
 	font-family: 'Roboto', sans-serif;
 	font-size: 33px;
 	font-weight: 700;
@@ -243,6 +230,7 @@ img {
 }
 
 .sub-title-section {
+	margin-bottom: 19px;
 	font-family: 'Cardo', sans-serif;
 	font-style: italic;
 	font-size: 18px;
@@ -252,6 +240,7 @@ img {
 }
 
 .price-section {
+	margin-bottom: 12px;
 	font-family: 'Cardo', sans-serif;
 	font-size: 15px;
 	font-weight: 400;
@@ -260,6 +249,7 @@ img {
 }
 
 .text-section {
+	margin-bottom: 26px;
 	font-family: 'Cardo', sans-serif;
 	font-size: 18px;
 	font-weight: 400;
@@ -268,6 +258,7 @@ img {
 }
 
 .section-link {
+	margin-top: 48px;
 	font-family: 'Roboto', sans-serif;
 	font-size: 17px;
 	font-weight: 400;
@@ -275,10 +266,13 @@ img {
 	color: rgb(0, 0, 0);
 }
 
+.block-ads {
+	margin-top: 56px;
+}
+
 .img-section {
 	width: 960px;
 	height: 542px;
-
 	background-color: lightgray;
 	background-image: url(../images/sec-cloe-img.jpg);
 	background-repeat: no-repeat;
@@ -287,9 +281,10 @@ img {
 	display: inline-block;
 }
 
-/* /cloe */
+.new-section {
+	color: rgb(188, 20, 20);
+}
 
-/* pelican */
 .pelican {
 	display: flex;
     flex-direction: row;
@@ -303,4 +298,80 @@ img {
 	text-align: left;
 }
 
-/* /pelican */
+.batea-collection {
+	margin-bottom: 61px;
+}
+
+.our-piece {
+	margin-bottom: 43px;
+}
+
+.container-our-pieces {
+	margin-right: 160px;
+	margin-left: 160px;
+	display: flex;
+	flex-direction: column;
+    align-items: center;
+}
+
+.our-pieces__title {
+	font-family: Cardo;
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 39px;
+	letter-spacing: 0%;
+	text-align: center;
+	color: rgb(58, 58, 58);
+}
+
+.our-pieces__subtitle {
+	margin-bottom: 37px;
+	font-family: Cardo;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 33.43px;
+	letter-spacing: 0%;
+	text-align: center;
+	color: rgb(0, 0, 0);
+}
+
+.our-pieces__slider { 
+	display: flex;
+	flex-direction: column;
+    align-items: center;
+	margin-bottom: 55px;
+}
+
+.our-pieces-list { /* временно, до реализации слайдера */
+	display: flex;
+	flex-direction: row;
+    gap: 10px;
+	margin-bottom: 20px;
+}
+
+.our-pieces__text {
+	padding: 83px 0 37px;
+	font-family: Cardo;
+	font-style: italic;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 30px;
+	letter-spacing: 0%;
+	text-align: center;
+	color: rgb(2, 2, 2);
+}
+
+.our-pieces__autor {
+	margin-bottom: 49px;
+	font-family: Cardo;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 21px;
+	letter-spacing: 0%;
+	text-align: center;
+	color: rgb(0, 0, 0);
+}
+
+.slide {
+	margin-bottom: 52px;
+}
