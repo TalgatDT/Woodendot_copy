@@ -1,27 +1,26 @@
-/* color */
-
-/* all */
 html {
-  scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  max-width: 1440px;
-  width: 100%;
-  background: rgb(247, 247,247);
+	margin: 0;
+	padding: 0;
+	margin-left: auto;         /* Автоматический отступ слева */
+	margin-right: auto;        /* Автоматический отступ справа */
+	max-width: 1440px;
+	width: 100%;
+	background: rgb(247, 247,247);
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+	color: inherit;
+	text-decoration: none;
 }
 
 p {
@@ -35,14 +34,13 @@ ul {
 }
 
 li {
-  list-style: none;
+	list-style: none;
 }
 
 img {
-  max-width: 100%;
+	max-width: 100%;
 }
 
-/* header */
 .header {
 	height: 69px;
 	border-bottom: 1px solid rgb(200,200,200);
@@ -92,9 +90,7 @@ img {
 	margin-left: auto;
 	margin-right: 41%;
 }
-/* /header */
 
-/* head */
 .head {
 	height: 698px;
 	background-color: rgb(200,200,200);
@@ -124,19 +120,18 @@ img {
 	cursor: pointer;
 	width: 204px;
 	height: 33px;
-
 	font-family: 'Cardo', sans-serif;
 	font-size: 20px;
 	font-weight: 700;
 	line-height: 20px;
 	text-align: center;
 	color: rgb(255, 255, 255);
-
 	background-color: inherit;
 	border: 1px solid rgb(255, 255, 255);
 
 	&:hover {
 		background-color: rgba(255, 255, 255, .2);
+		border: 0px solid rgba(255, 255, 255, 0);
 		transition: all .2s ease-in-out;
 	}
 
@@ -145,9 +140,7 @@ img {
 		border: 1px solid rgb(128, 128, 128);
 	}
 }
-/* /head */
 
-/* info */
 .info {
 	height: 155px;
 }
@@ -186,9 +179,7 @@ img {
 	text-align: left;
 	color: rgb(0, 0, 0);
 }
-/* /info */
 
-/* gallery */
 .gallery {
 	margin-bottom: 115px;
 	height: 320px;
@@ -202,79 +193,539 @@ img {
 	width: 360px;
 	height: 320px;
 }
-/* /gallery */
 
-/* cloe */
-.cloe {
+.cloe,
+.pelican,
+.alada,
+.alba-collection,
+.batea-collection {
 	display: flex;
-	align-items: center;
-	height: 542px;
+    align-items: center;
+    flex-direction: row;
+    gap: 1%;
+    height: 542px;
 }
 
 .margin-bottom {
 	margin-bottom: 22px;
 }
 
-.margin-right {
-	margin-right: 22px;
+.left-block {
+	display: flex;
+    flex-direction: column;
+	align-items: flex-end;
+	text-align: right;
+}
+
+.content-section {
+	width: 30%;
 }
 
 .title-section {
+	margin-bottom: 4px;
 	font-family: 'Roboto', sans-serif;
 	font-size: 33px;
 	font-weight: 700;
 	line-height: 56px;
-	text-align: right;
 	color: rgb(0, 0, 0);
 }
 
 .sub-title-section {
+	margin-bottom: 19px;
 	font-family: 'Cardo', sans-serif;
 	font-style: italic;
 	font-size: 18px;
 	font-weight: 400;
 	line-height: 37.14px;
-	text-align: right;
 	color: rgb(0, 0, 0);
 }
 
 .price-section {
+	margin-bottom: 12px;
 	font-family: 'Cardo', sans-serif;
 	font-size: 15px;
 	font-weight: 400;
 	line-height: 27.86px;
-	text-align: right;
 	color: rgb(0, 0, 0);
 }
 
 .text-section {
+	margin-bottom: 26px;
 	font-family: 'Cardo', sans-serif;
 	font-size: 18px;
 	font-weight: 400;
 	line-height: 30.6px;
-	text-align: right;
 	color: rgb(82, 82, 82);
 }
 
 .section-link {
+	margin-top: 48px;
 	font-family: 'Roboto', sans-serif;
 	font-size: 17px;
 	font-weight: 400;
 	line-height: 22px;
-	text-align: right;
 	color: rgb(0, 0, 0);
+
+	&:hover {
+		color: rgba(0, 0, 0, 0.5);
+		transition: all .2s ease-in-out;
+	}
+}
+
+.block-ads {
+	margin-top: 56px;
 }
 
 .img-section {
 	width: 960px;
 	height: 542px;
-
-	background-color: green;
+	background-color: lightgray;
 	background-image: url(../images/sec-cloe-img.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  display: inline-block;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	display: inline-block;
 }
 
-/* /cloe */
+.new-section {
+	color: rgb(188, 20, 20);
+}
+
+.pelican {
+	display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.right-block {
+	display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+	text-align: left;
+}
+
+.batea-collection {
+	margin-bottom: 61px;
+}
+
+.our-piece {
+	margin-bottom: 43px;
+}
+
+.container-our-pieces {
+	margin-right: 160px;
+	margin-left: 160px;
+	display: flex;
+	flex-direction: column;
+    align-items: center;
+}
+
+.our-pieces__title {
+	font-family: Cardo;
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 39px;
+	letter-spacing: 0%;
+	text-align: center;
+	color: rgb(58, 58, 58);
+}
+
+.our-pieces__subtitle {
+	margin-bottom: 37px;
+	font-family: Cardo;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 33.43px;
+	letter-spacing: 0%;
+	text-align: center;
+	color: rgb(0, 0, 0);
+}
+
+.our-pieces__slider { 
+	display: flex;
+	flex-direction: column;
+    align-items: center;
+	margin-bottom: 55px;
+}
+
+.our-pieces-list { /* временно, до реализации слайдера */
+	display: flex;
+	flex-direction: row;
+    gap: 10px;
+	margin-bottom: 20px;
+}
+
+.our-pieces__text {
+	padding: 83px 0 37px;
+	font-family: Cardo;
+	font-style: italic;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 30px;
+	letter-spacing: 0%;
+	text-align: center;
+	color: rgb(2, 2, 2);
+}
+
+.our-pieces__autor {
+	margin-bottom: 49px;
+	font-family: Cardo;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 21px;
+	letter-spacing: 0%;
+	text-align: center;
+	color: rgb(0, 0, 0);
+}
+
+.slide {
+	margin-bottom: 52px;
+}
+
+.about-list {
+	display: flex;
+	height: 370px;
+	margin-bottom: 72px;
+}
+
+.about-item {
+    position: relative; /* для позиционирования внутреннего контента */
+	width: 360px;
+    height: 370px;
+    background: rgba(255, 255, 255, 1);
+    /* box-shadow: 0 4px 12px rgba(0,0,0,0.08); */
+    overflow: hidden;
+}
+
+.about-item_bg-grey {
+	background: rgba(248, 248, 248, 1);
+}
+
+/* Внутренний контейнер, который будет вертикально центровать содержимое
+     при этом мы обеспечим расстояние от верхнего края до изображения 55px */
+.about-item__inner {
+	/* используем flex-колонку для вертикального расположения элементов по центру */
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Высота равна высоте карточки, чтобы можно было контролировать отступ сверху */
+    height: 100%;
+    /* Отодвигаем содержимое так, чтобы верхний отступ до изображения был 55px.
+       Поскольку элемент изображения идёт первым, используем padding-top. */
+    padding-top: 55px;
+    /* Ограничиваем горизонтальные внутренние отступы, чтобы текст не подходил ближе чем 20px */
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+
+.about-img {
+	width: 94px;
+    height: 94px;
+    object-fit: cover;
+    border-radius: 6px; /* опционально */
+    display: block;
+}
+
+.about-titlecard {
+	margin-top: 29px;
+    margin-bottom: 0; /* нижний маргин контролируем отдельно для точных отступов */
+	font-family: Cardo;
+    font-size: 24px;
+    font-weight: 400;
+	line-height: 35px;
+	letter-spacing: 0%;
+	text-align: center;
+    color: rgba(0, 0, 0, 1);
+}
+
+.about-text {
+	margin-top: 12px;
+    margin-bottom: 0;
+	font-family: Cardo;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 27.86px;
+	letter-spacing: 0%;
+	text-align: center;    
+    color: rgba(0, 0, 0, 1);
+    /* Сделаем так, чтобы текст мог переноситься и не заходил за 20px от краёв:
+       padding-left/right уже заданы у .card-inner */
+}
+
+/* Контейнер для ссылки и линии */
+.about-link-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.about-link {
+    margin-top: 29px;
+	font-family: Cardo;
+    text-decoration: none;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 27.86px;
+	text-align: center;
+	color: rgba(0, 0, 0, 1);
+    /* padding: 2px 4px; */ /*чуть больше кликабельной области */
+    z-index: 1; /* чтобы ссылка была над линией, если накладывается */
+}
+
+/* Линия под ссылкой */
+.link-line {
+    width: 60px; /* длина линии — можно менять */
+    height: 1px; /* толщина линии */
+    background-color: grey; /* цвет линии */
+    border-radius: 1px;
+}
+
+/* Вариант: при наведении на ссылку меняем цвет линии */
+.about-link:hover + .link-line {
+    color: rgba(0, 0, 0, 0.5);
+	transition: all .2s ease-in-out;
+}
+
+/* FOOTER */
+:root{
+	--footer-bg: #f8f8f8; /* фон футера */
+	--text-color: #222;
+	--muted: #666;
+	--container-padding: 150px;
+	--column-gap: 40px; /* можно регулировать */
+}
+
+*{box-sizing: border-box;}
+.site-footer{
+	background: rgba(233, 233, 233, 1);
+	color: var(--text-color);
+	font-family: Arial, sans-serif;
+	padding: 48px 0; /* общий вертикальный padding */
+}
+
+/* внутренний контейнер с отступами слева и справа 150px */
+.footer-inner{
+	padding: 0 var(--container-padding);
+	margin: 0 auto;
+}
+
+/* Верхняя часть: слева три колонки, справа блок */
+.footer-top{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	gap: 0;
+	margin-bottom: 48px; /* от футера до нижней секции */
+}
+
+/* Левая часть: 3 колонки в ряд */
+.footer-top-left{
+	display: flex;
+	gap: var(--column-gap);
+	align-items: flex-start;
+}
+
+/* Каждая колонка */
+.footer-col{
+	width: 208px; /* примерная ширина; при необходимости подстройте */
+}
+
+/* Заголовок колонки */
+.col-title{	
+	font-family: Cardo;
+	font-size: 21px;
+	font-weight: 400;
+	line-height: 21px;
+	text-align: center;
+	text-transform: uppercase;
+	color: rgba(0, 0, 0, 1);
+}
+
+/* Отступ от заголовка до первой ссылки 42px.
+   Сделаем так: заголовок + margin-bottom:42px, а контейнер ссылок ограничим по высоте 198px */
+.col-title{
+	margin-bottom: 45px;
+}
+
+/* Контейнер ссылок фиксированной высоты 198px */
+.links-wrap{
+	height: 208px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	gap: 6px; /* расстояние между ссылками */
+	overflow: hidden;
+}
+
+/* Стили ссылок */
+.links-wrap a{	
+	font-family: Cardo;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 27.86px;
+	letter-spacing: 0%;
+	text-align: center;
+	color: rgba(0, 0, 0, 1);
+	text-decoration: none;
+}
+
+/* Правая часть: блок размером 342x284 */
+.footer-top-right{
+	margin-left: 124px; /* расстояние от третьей колонки до блока справа — 124px */
+	/* чтобы гарантировать размер блока, не полагаться только на margin */
+}
+
+.right-block-footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 342px;
+	height: 284px;
+	padding: 20px;
+}
+
+/* Текст сверху */
+.right-text-footer {	
+	margin-bottom: 20px; /* расстояние до кнопки 20px */
+	font-family: Cardo;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 27.86px;
+	text-align: center;
+	color: rgba(0, 0, 0, 1);
+}
+
+/* Кнопка */
+.right-button-footer {
+	padding: 0px 48px;
+    background-color: #fff;
+    font-family: Cardo;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27.86px;
+    text-align: center;
+    color: rgba(0, 0, 0, 1);
+    border: 1.5px solid #000;
+    /* border-radius: 4px; */
+    cursor: pointer;
+    margin-bottom: 20px; /* расстояние до иконок (мы отделим картинками от кнопки 20px) */
+
+	&:hover {
+		background-color: rgba(255, 255, 255, 0.3);
+		transition: all .2s ease-in-out;
+	}
+}
+
+/* Но в описании: кнопка и под ней горизонтально две картинки 20px между текстом и кнопкой, затем картинки, расстояние между картинками 40px.
+   У нас уже 20px от текста до кнопки. Теперь картинки: */
+.icons-row{
+	display: flex;
+	gap: 40px; /* расстояние между картинками 40px */
+	margin-bottom: 19px; /* расстояние от картинок до блока рейтинга 19px */
+}
+
+/* Размер картинок 66x66 */
+.small-icon{
+	width: 66px;
+	height: 66px;
+	object-fit: cover;
+}
+
+/* Блок рейтинга: 5 звезд и надпись */
+.rating-row{
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	font-size: 14px;
+	color: var(--muted);
+}
+
+/* Нижняя секция футера: три блока (лево, центр, право) */
+.footer-bottom{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	border-top: 1px solid #e6e6e6;
+	padding-top: 14px;
+	gap: 20px;
+}
+
+/* Левый блок (copyright) */
+.bottom-left{	
+	font-family: Cardo;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 22.29px;
+	text-align: center;
+	color: rgba(0, 0, 0, 1);
+}
+
+/* Правый блок (dev-link */
+.dev-link {	
+	font-family: Cardo;
+	font-size: 11px;
+	font-weight: 400;
+	line-height: 22.29px;
+	text-align: center;
+	color: rgba(0, 0, 0, 1);
+}
+
+/* Центр: изображения платежных систем */
+.bottom-center{
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+
+.bottom-center .pay-icon{
+	height: 24px;
+	width: auto;
+	display: block;
+}
+
+/* Правый блок: ссылка на разработчика */
+.bottom-right .dev-link{
+	color: var(--muted);
+	text-decoration: none;
+	font-size: 13px;
+}
+
+/* Адаптив: при узких экранах — колонки и правый блок стекаются */
+@media (max-width: 1100px){
+	.footer-inner{ padding: 0 40px; }
+	.footer-top{
+		flex-direction: column;
+		gap: 24px;
+	}
+	.footer-top-left{
+		gap: 24px;
+		flex-wrap: wrap;
+	}
+	.footer-top-right{
+		margin-left: 0;
+	}
+}
+/* /FOOTER */
+
+ /* Адаптивное поведение: если ширина экрана меньше карточки, карточка уменьшается (опционально) */
+@media (max-width: 380px) {
+    .card { transform: scale(0.95); }
+}
+
+.partners {
+	padding-top: 52px;
+	padding-bottom: 54px;
+}
+
+.pertners-title {
+	margin-bottom: 40px;
+	font-family: Cardo;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 26px;
+	letter-spacing: 0.3px;
+	text-align: center;
+	color: rgba(69, 69, 69, 1);
+}
